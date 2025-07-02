@@ -1,0 +1,278 @@
+@page
+@model produit.Pages.ProduitsModel
+@{
+    ViewData["Title"] = "Gestion des Produits";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>@ViewData["Title"]</h2>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProduitModal">
+                    <i class="fas fa-plus"></i> Nouveau Produit
+                </button>
+            </div>
+
+            @if (Model.Produits?.Any() == true)
+            {
+                <div class="row">
+                    @foreach (var produit in Model.Produits)
+                    {
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">@produit.Nom</h5>
+                                    <p class="card-text">@(produit.Description ?? "Aucune description")</p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="text-success fw-bold mb-1">
+                                                <i class="fas fa-money-bill"></i> @produit.Prix.ToString("F2") DH
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="@(produit.Stock > 0 ? "text-success" : "text-danger") mb-1">
+                                                <i class="fas fa-boxes"></i> Stock: @produit.Stock
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group w-100" role="group">
+                                        <button type="button" class="btn btn-outline-warning" onclick="editProduit(@produit.Id, '@produit.Nom', '@(produit.Description?.Replace("'", "\\'"))', @produit.Prix, @produit.Stock, @(produit.ListProduitId?.ToString() ?? "null"))">
+                                            <i class="fas fa-edit"></i> Modifier
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger" onclick="deleteProduit(@produit.Id, '@produit.Nom')">
+                                            <i class="fas fa-trash"></i> Supprimer
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="fas fa-box-open fa-3x text-muted mb-3"></i>
+                    <h4>Aucun produit</h4>
+                    <p class="text-muted">Commencez par créer votre premier produit</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProduitModal">
+                        Créer un produit
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Modal Créer Produit -->
+<div class="modal fade" id="createProduitModal" tabindex="-1" aria-labelledby="createProduitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="createProduitForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createProduitModalLabel">Créer un nouveau produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="createProduitNom" class="form-label">Nom du produit *</label>
+                        <input type="text" class="form-control" id="createProduitNom" name="nom" required maxlength="100">
+                    </div>
+                    <div class="mb-3">
+                        <label for="createProduitDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="createProduitDescription" name="description" rows="3" maxlength="500"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="createProduitPrix" class="form-label">Prix (DH) *</label>
+                                <input type="number" class="form-control" id="createProduitPrix" name="prix" step="0.01" min="0" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="createProduitStock" class="form-label">Stock</label>
+                                <input type="number" class="form-control" id="createProduitStock" name="stock" min="0" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="createProduitListe" class="form-label">Liste de produits</label>
+                        <select class="form-select" id="createProduitListe" name="listProduitId">
+                            <option value="">Aucune liste</option>
+                            @foreach (var liste in Model.ListesProduits)
+                            {
+                                <option value="@liste.Id">@liste.Nom</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Créer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Modifier Produit -->
+<div class="modal fade" id="editProduitModal" tabindex="-1" aria-labelledby="editProduitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="editProduitForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProduitModalLabel">Modifier le produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editProduitId" name="id">
+                    <div class="mb-3">
+                        <label for="editProduitNom" class="form-label">Nom du produit *</label>
+                        <input type="text" class="form-control" id="editProduitNom" name="nom" required maxlength="100">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editProduitDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="editProduitDescription" name="description" rows="3" maxlength="500"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="editProduitPrix" class="form-label">Prix (DH) *</label>
+                                <input type="number" class="form-control" id="editProduitPrix" name="prix" step="0.01" min="0" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="editProduitStock" class="form-label">Stock</label>
+                                <input type="number" class="form-control" id="editProduitStock" name="stock" min="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editProduitListe" class="form-label">Liste de produits</label>
+                        <select class="form-select" id="editProduitListe" name="listProduitId">
+                            <option value="">Aucune liste</option>
+                            @foreach (var liste in Model.ListesProduits)
+                            {
+                                <option value="@liste.Id">@liste.Nom</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-warning">Modifier</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Créer un nouveau produit
+        document.getElementById('createProduitForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                nom: formData.get('nom'),
+                description: formData.get('description') || null,
+                prix: parseFloat(formData.get('prix')),
+                stock: parseInt(formData.get('stock')) || 0,
+                listProduitId: formData.get('listProduitId') ? parseInt(formData.get('listProduitId')) : null
+            };
+
+            try {
+                const response = await fetch('/api/Produits', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    alert('Erreur lors de la création du produit');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la création du produit');
+            }
+        });
+
+        // Modifier un produit
+        function editProduit(id, nom, description, prix, stock, listProduitId) {
+            document.getElementById('editProduitId').value = id;
+            document.getElementById('editProduitNom').value = nom;
+            document.getElementById('editProduitDescription').value = description || '';
+            document.getElementById('editProduitPrix').value = prix;
+            document.getElementById('editProduitStock').value = stock;
+            document.getElementById('editProduitListe').value = listProduitId || '';
+            
+            const modal = new bootstrap.Modal(document.getElementById('editProduitModal'));
+            modal.show();
+        }
+
+        document.getElementById('editProduitForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const id = formData.get('id');
+            const data = {
+                id: parseInt(id),
+                nom: formData.get('nom'),
+                description: formData.get('description') || null,
+                prix: parseFloat(formData.get('prix')),
+                stock: parseInt(formData.get('stock')) || 0,
+                listProduitId: formData.get('listProduitId') ? parseInt(formData.get('listProduitId')) : null
+            };
+
+            try {
+                const response = await fetch(`/api/Produits/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    alert('Erreur lors de la modification du produit');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la modification du produit');
+            }
+        });
+
+        // Supprimer un produit
+        async function deleteProduit(id, nom) {
+            if (confirm(`Êtes-vous sûr de vouloir supprimer le produit "${nom}" ? Cette action est irréversible.`)) {
+                try {
+                    const response = await fetch(`/api/Produits/${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (response.ok) {
+                        location.reload();
+                    } else {
+                        alert('Erreur lors de la suppression du produit');
+                    }
+                } catch (error) {
+                    console.error('Erreur:', error);
+                    alert('Erreur lors de la suppression du produit');
+                }
+            }
+        }
+    </script>
+}

@@ -1,0 +1,272 @@
+@page "/GestionProduits/{listId:int}"
+@model produit.Pages.GestionProduitsModel
+@{
+    ViewData["Title"] = "Gestion des Produits - " + Model.ListeProduit?.Nom;
+}
+
+<div class="container mt-4">
+    @if (Model.ListeProduit != null)
+    {
+        <div class="row mb-4">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/ListeProduits">Listes</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@Model.ListeProduit.Nom</li>
+                    </ol>
+                </nav>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>@Model.ListeProduit.Nom</h2>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProductModal">
+                        <i class="fas fa-plus"></i> Nouveau Produit
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        @if (Model.ListeProduit.Produits?.Any() == true)
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Nom</th>  
+                                    <th>Prix</th>
+                                    <th>Stock</th>
+                                    <th>Date de création</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var produit in Model.ListeProduit.Produits.OrderBy(p => p.Nom))
+                                {
+                                    <tr>
+                                        <td><strong>@produit.Nom</strong></td>
+                                        
+                                        <td><span class="badge bg-success">@produit.Prix.ToString("F2") DH</span></td>
+                                        <td>
+                                            <span class="badge @(produit.Stock > 0 ? "bg-primary" : "bg-danger")">
+                                                @produit.Stock @(produit.Stock <= 1 ? "unité" : "unités")
+                                            </span>
+                                        </td>
+                                        <td>@produit.DateCreation.ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td>
+                                            <div class="btn-group btn-group-sm" role="group">
+                                                <button type="button" class="btn btn-outline-warning" 
+                                                        onclick="editProduct(@produit.Id, '@produit.Nom',  @produit.Prix, @produit.Stock)">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-danger" 
+                                                        onclick="deleteProduct(@produit.Id, '@produit.Nom')">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fas fa-box-open fa-3x text-muted mb-3"></i>
+                <h4>Aucun produit dans cette liste</h4>
+                <p class="text-muted">Commencez par ajouter votre premier produit</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProductModal">
+                    Ajouter un produit
+                </button>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> Liste de produits introuvable.
+            <a href="/ListeProduits" class="alert-link">Retourner aux listes</a>
+        </div>
+    }
+</div>
+
+<!-- Modal Créer Produit -->
+<div class="modal fade" id="createProductModal" tabindex="-1" aria-labelledby="createProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form id="createProductForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createProductModalLabel">Créer un nouveau produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="createProductNom" class="form-label">Nom du produit *</label>
+                                <input type="text" class="form-control" id="createProductNom" name="nom" required maxlength="100">
+                            </div>
+                            <div class="mb-3">
+                                <label for="createProductPrix" class="form-label">Prix (DH) *</label>
+                                <input type="number" class="form-control" id="createProductPrix" name="prix" step="0.01" min="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="createProductStock" class="form-label">Stock</label>
+                                <input type="number" class="form-control" id="createProductStock" name="stock" min="0" value="0">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Créer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Modifier Produit -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form id="editProductForm">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">Modifier le produit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editProductId" name="id">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="editProductNom" class="form-label">Nom du produit *</label>
+                                <input type="text" class="form-control" id="editProductNom" name="nom" required maxlength="100">
+                            </div>
+                            <div class="mb-3">
+                                <label for="editProductPrix" class="form-label">Prix (DH) *</label>
+                                <input type="number" class="form-control" id="editProductPrix" name="prix" step="0.01" min="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="editProductStock" class="form-label">Stock</label>
+                                <input type="number" class="form-control" id="editProductStock" name="stock" min="0">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-warning">Modifier</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const listId = @Model.ListId;
+
+        // Créer un nouveau produit
+        document.getElementById('createProductForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                nom: formData.get('nom'),
+                prix: parseFloat(formData.get('prix')),
+                stock: parseInt(formData.get('stock')) || 0,
+                listProduitId: listId // Ajouter la référence à la liste
+            };
+
+            try {
+                const response = await fetch('/api/Produits', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    location.reload(); // Plus simple, le produit est déjà lié à la liste
+                } else {
+                    alert('Erreur lors de la création du produit');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la création du produit');
+            }
+        });
+
+        // Modifier un produit
+        function editProduct(id, nom, prix, stock) {
+            document.getElementById('editProductId').value = id;
+            document.getElementById('editProductNom').value = nom;
+            document.getElementById('editProductPrix').value = prix;
+            document.getElementById('editProductStock').value = stock;
+            
+            const modal = new bootstrap.Modal(document.getElementById('editProductModal'));
+            modal.show();
+        }
+
+        document.getElementById('editProductForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const id = formData.get('id');
+            const data = {
+                id: parseInt(id),
+                nom: formData.get('nom'),
+                prix: parseFloat(formData.get('prix')),
+                stock: parseInt(formData.get('stock')) || 0,
+                listProduitId: listId // Garder la référence à la liste
+            };
+
+            try {
+                const response = await fetch(`/api/Produits/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    alert('Erreur lors de la modification du produit');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la modification du produit');
+            }
+        });
+
+        // Supprimer un produit
+        async function deleteProduct(id, nom) {
+            if (confirm(`Êtes-vous sûr de vouloir supprimer le produit "${nom}" ? Cette action est irréversible.`)) {
+                try {
+                    const response = await fetch(`/api/Produits/${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (response.ok) {
+                        location.reload();
+                    } else {
+                        alert('Erreur lors de la suppression du produit');
+                    }
+                } catch (error) {
+                    console.error('Erreur:', error);
+                    alert('Erreur lors de la suppression du produit');
+                }
+            }
+        }
+    </script>
+}

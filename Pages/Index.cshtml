@@ -1,0 +1,79 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Gestion des Produits";
+}
+
+<div class="container mt-4">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Gestion des Produits</h1>
+        <p class="lead">Système de gestion des listes de produits</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="row">
+
+               
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover shadow border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-box-open fa-3x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark mb-3">Gestion des Produits</h5>
+                            <p class="card-text text-muted mb-4">
+                                Créez, modifiez et organisez tous vos produits en un seul endroit
+                            </p>
+                            <a href="/Produits" class="btn btn-outline-primary btn-lg px-4 rounded-pill">
+                                <i class="fas fa-arrow-right me-2"></i> Commencer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 card-hover shadow border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-container mb-4">
+                                <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-clipboard-list fa-3x text-success"></i>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark mb-3">Listes de Produits</h5>
+                            <p class="card-text text-muted mb-4">
+                                Organisez vos produits par catégories et créez des listes personnalisées
+                            </p>
+                            <a href="/ListeProduits" class="btn btn-outline-success btn-lg px-4 rounded-pill">
+                                <i class="fas fa-arrow-right me-2"></i> Commencer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</div>
+<style>
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+        }
+
+    .icon-container {
+        transition: all 0.3s ease;
+    }
+
+    .card-hover:hover .icon-container {
+        transform: scale(1.1);
+    }
+</style>
