@@ -16,8 +16,8 @@ Application ASP.NET Core pour la gestion des produits avec Entity Framework Core
 - **ASP.NET Core 8.0**
 - **Entity Framework Core**
 - **SQL Server**
-- **Razor Pages**
-- **Bootstrap** (pour l'interface utilisateur)
+- **MVC(React views)**
+  
 
 ## 📋 Prérequis
 
@@ -64,7 +64,6 @@ produit/
 ├── Data/                # Contexte de base de données
 ├── Migrations/          # Migrations Entity Framework
 ├── Model/               # Modèles de données
-├── Pages/               # Pages Razor
 ├── wwwroot/             # Fichiers statiques
 └── Program.cs           # Point d'entrée de l'application
 ```
@@ -84,10 +83,3 @@ produit/
 - Description (string)
 - Produits (ICollection<Produit>)
 
-## 🚀 Déploiement
-
-Pour déployer l'application en production, consultez la [documentation officielle ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/).
-
-## 📝 Licence
-
-Ce projet est sous licence MIT.
