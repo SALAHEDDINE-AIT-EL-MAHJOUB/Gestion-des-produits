@@ -71,3 +71,35 @@ img {
   box-shadow: 0 8px 32px rgba(52, 152, 219, 0.18);
   transform: scale(1.03);
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+  }
+  .card {
+    min-width: 95vw;
+    max-width: 99vw;
+    margin: 0 auto 16px auto;
+  }
+  .row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .product-cards-group {
+    padding: 8px 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-control, .form-select, .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .card-header, .card-footer {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

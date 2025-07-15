@@ -131,7 +131,7 @@ function ProductView() {
   const defaultImage = "/images/no-image.png";
 
   return (
-    <div>
+    <div style={{ paddingTop: window.innerWidth < 768 ? "64px" : "0" }}>
       <div className="mt-4 mb-4">
         <h2 className="text-center">Produits</h2>
       </div>

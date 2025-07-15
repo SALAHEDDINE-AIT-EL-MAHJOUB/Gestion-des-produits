@@ -10,9 +10,10 @@ import './App.css';
 function AppContent() {
   const location = useLocation();
   const isHome = location.pathname === "/";
+  const isMobile = window.innerWidth < 768;
 
   return (
-    <div style={{ marginLeft: isHome ? 0 : "250px" }}>
+    <div style={{ marginLeft: !isHome && !isMobile ? "250px" : 0 }}>
       {!isHome && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
