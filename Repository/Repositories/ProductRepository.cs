@@ -33,7 +33,7 @@ namespace Repository.Repositories
                 existing.Name = product.Name;
                 existing.Price = product.Price;
                 existing.Stock = product.Stock;
-                existing.PhotoUrl = product.PhotoUrl; // Correction ici
+                existing.PhotoUrl = product.PhotoUrl; 
                 existing.DateCreation = product.DateCreation;
                 existing.ListProduitId = product.ListProduitId;
                 existing.Description = product.Description;
