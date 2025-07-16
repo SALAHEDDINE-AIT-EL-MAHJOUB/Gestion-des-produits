@@ -1,0 +1,425 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\css\\site.min.css",
+      "PackagePath": "staticwebassets\\css\\site.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\044d92bf-6a45-43cb-81b2-17af32ac0453.png",
+      "PackagePath": "staticwebassets\\images\\044d92bf-6a45-43cb-81b2-17af32ac0453.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\063f7f7d-f75e-4e20-9c21-43c8f8012bce.png",
+      "PackagePath": "staticwebassets\\images\\063f7f7d-f75e-4e20-9c21-43c8f8012bce.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\0dcb0adf-776c-4f3a-9838-db0b058e1d4c.png",
+      "PackagePath": "staticwebassets\\images\\0dcb0adf-776c-4f3a-9838-db0b058e1d4c.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\34bd6d19-5e48-41be-a95c-116db82db3f1.png",
+      "PackagePath": "staticwebassets\\images\\34bd6d19-5e48-41be-a95c-116db82db3f1.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\577f9b39-8679-415c-aa5b-34d7cd595c88.png",
+      "PackagePath": "staticwebassets\\images\\577f9b39-8679-415c-aa5b-34d7cd595c88.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\740df716-2c44-4fc8-871c-51a0e7c8d3d9.png",
+      "PackagePath": "staticwebassets\\images\\740df716-2c44-4fc8-871c-51a0e7c8d3d9.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\7ce574b5-3497-4369-aadb-1a0dae7c8872.jpg",
+      "PackagePath": "staticwebassets\\images\\7ce574b5-3497-4369-aadb-1a0dae7c8872.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner1.png",
+      "PackagePath": "staticwebassets\\images\\banner1.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner1.svg",
+      "PackagePath": "staticwebassets\\images\\banner1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner2.png",
+      "PackagePath": "staticwebassets\\images\\banner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner2.svg",
+      "PackagePath": "staticwebassets\\images\\banner2.svg"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner3.png",
+      "PackagePath": "staticwebassets\\images\\banner3.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\banner3.svg",
+      "PackagePath": "staticwebassets\\images\\banner3.svg"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\ddd50191-f680-473d-b9da-16b3c9e18c3b.png",
+      "PackagePath": "staticwebassets\\images\\ddd50191-f680-473d-b9da-16b3c9e18c3b.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\f8357205-96fc-49a8-9c21-12c3f8b4b14f.png",
+      "PackagePath": "staticwebassets\\images\\f8357205-96fc-49a8-9c21-12c3f8b4b14f.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\f9997809-40e5-4a42-9d56-ce89fa8d725b.png",
+      "PackagePath": "staticwebassets\\images\\f9997809-40e5-4a42-9d56-ce89fa8d725b.png"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\js\\site.min.js",
+      "PackagePath": "staticwebassets\\js\\site.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\bootstrap\\dist\\js\\npm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\npm.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation-unobtrusive\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery\\.bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery\\.bower.json"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\css\\main.f855e6bc.css",
+      "PackagePath": "staticwebassets\\static\\css\\main.f855e6bc.css"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\css\\main.f855e6bc.css.map",
+      "PackagePath": "staticwebassets\\static\\css\\main.f855e6bc.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\js\\453.15f4508c.chunk.js",
+      "PackagePath": "staticwebassets\\static\\js\\453.15f4508c.chunk.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\js\\453.15f4508c.chunk.js.map",
+      "PackagePath": "staticwebassets\\static\\js\\453.15f4508c.chunk.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\js\\main.1d3ecbfc.js",
+      "PackagePath": "staticwebassets\\static\\js\\main.1d3ecbfc.js"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\js\\main.1d3ecbfc.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\static\\js\\main.1d3ecbfc.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\js\\main.1d3ecbfc.js.map",
+      "PackagePath": "staticwebassets\\static\\js\\main.1d3ecbfc.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\static\\media\\logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+      "PackagePath": "staticwebassets\\static\\media\\logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Web.props",
+      "PackagePath": "build\\Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Web.props",
+      "PackagePath": "buildMultiTargeting\\Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Web.props",
+      "PackagePath": "buildTransitive\\Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

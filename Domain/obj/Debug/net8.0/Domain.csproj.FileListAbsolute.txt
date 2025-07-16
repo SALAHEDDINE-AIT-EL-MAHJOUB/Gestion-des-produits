@@ -1,0 +1,13 @@
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Domain\obj\Debug\net8.0\ref\Domain.dll
