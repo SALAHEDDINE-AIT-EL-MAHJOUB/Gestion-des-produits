@@ -1205,3 +1205,4 @@ C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net6.0\Web
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net6.0\Web.genruntimeconfig.cache
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net6.0\ref\Web.dll
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Web\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\Web\obj\Debug\net6.0\Web.sourcelink.json

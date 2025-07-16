@@ -5,6 +5,7 @@ wwwroot\images\044d92bf-6a45-43cb-81b2-17af32ac0453.png
 wwwroot\images\063f7f7d-f75e-4e20-9c21-43c8f8012bce.png
 wwwroot\images\0dcb0adf-776c-4f3a-9838-db0b058e1d4c.png
 wwwroot\images\34bd6d19-5e48-41be-a95c-116db82db3f1.png
+wwwroot\images\577f9b39-8679-415c-aa5b-34d7cd595c88.png
 wwwroot\images\740df716-2c44-4fc8-871c-51a0e7c8d3d9.png
 wwwroot\images\7ce574b5-3497-4369-aadb-1a0dae7c8872.jpg
 wwwroot\images\banner1.png
