@@ -58,7 +58,7 @@ Elle permet d’ajouter, modifier, supprimer et consulter des produits dans une 
 ![Ajout produit](Web/wwwroot/images/banner2.png)
 
 ### 3. Liste des produits
-![Liste produits](![Exécution 1](Web/wwwroot/images/banner3.png))
+![Liste produits](Web/wwwroot/images/banner3.png)
 
 ## Structure du projet
 
