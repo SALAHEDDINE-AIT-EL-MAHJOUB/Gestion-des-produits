@@ -60,10 +60,10 @@ namespace Web.Controllers
                 {
                     Id = product.Id,
                     Name = product.Name,
-                    Price = product.Price ?? 0, // Correction ici
-                    Stock = product.Stock ?? 0, // Correction ici
+                    Price = product.Price ?? 0, 
+                    Stock = product.Stock ?? 0, 
                     DateCreation = product.DateCreation,
-                    ListProduitId = product.ListProduitId ?? 1, // Correction ici
+                    ListProduitId = product.ListProduitId ?? 1, 
                     Description = product.Description ?? "",
                     PhotoUrl = product.PhotoUrl ?? ""
                 };
@@ -109,10 +109,10 @@ namespace Web.Controllers
             {
                 Id = product.Id,
                 Name = product.Name,
-                Price = product.Price ?? 0, // Correction ici
-                Stock = product.Stock ?? 0, // Correction ici
+                Price = product.Price ?? 0, 
+                Stock = product.Stock ?? 0, 
                 DateCreation = product.DateCreation,
-                ListProduitId = product.ListProduitId ?? 1, // Correction ici
+                ListProduitId = product.ListProduitId ?? 1, 
                 Description = product.Description ?? "",
                 PhotoUrl = product.PhotoUrl ?? ""
             };
@@ -135,10 +135,10 @@ namespace Web.Controllers
             {
                 Id = product.Id,
                 Name = product.Name,
-                Price = product.Price ?? 0, // Correction ici
-                Stock = product.Stock ?? 0, // Correction ici
+                Price = product.Price ?? 0, 
+                Stock = product.Stock ?? 0, 
                 DateCreation = product.DateCreation,
-                ListProduitId = product.ListProduitId ?? 1, // Correction ici
+                ListProduitId = product.ListProduitId ?? 1, 
                 Description = product.Description ?? "",
                 PhotoUrl = product.PhotoUrl ?? ""
             };
@@ -156,10 +156,10 @@ namespace Web.Controllers
                 {
                     Id = product.Id,
                     Name = product.Name,
-                    Price = product.Price ?? 0, // Correction ici
-                    Stock = product.Stock ?? 0, // Correction ici
+                    Price = product.Price ?? 0, 
+                    Stock = product.Stock ?? 0, 
                     DateCreation = product.DateCreation,
-                    ListProduitId = product.ListProduitId ?? 1, // Correction ici
+                    ListProduitId = product.ListProduitId ?? 1, 
                     Description = product.Description ?? "",
                     PhotoUrl = product.PhotoUrl ?? ""
                 });
