@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NAEAdZMa64d/elT6zwG84J3ZbVqazYe90Q+WFSiMSV8=",
+  "Hash": "ZAOCxFuDzr5yOUPVee5yGXf+GDBaJ/Mg8tGYCL24eRs=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -414,6 +414,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\ddd50191-f680-473d-b9da-16b3c9e18c3b.png"
+    },
+    {
+      "Identity": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "images/de0c3c51-5d4f-4239-9fd5-ec53b9e873bf#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x4tlkzce44",
+      "Integrity": "Pzk7DjDv3kqD/w4gKkxVNpqUqb2Nbaq+BMViyTSfDTI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png"
     },
     {
       "Identity": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\f8357205-96fc-49a8-9c21-12c3f8b4b14f.png",
@@ -3715,6 +3736,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-UVe+Kg5xRQVzUKWPQz0xKuvuhILDFuxX54EwxFfHDeU="
+        }
+      ]
+    },
+    {
+      "Route": "images/de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png",
+      "AssetFile": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pzk7DjDv3kqD/w4gKkxVNpqUqb2Nbaq+BMViyTSfDTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 10:55:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pzk7DjDv3kqD/w4gKkxVNpqUqb2Nbaq+BMViyTSfDTI="
+        }
+      ]
+    },
+    {
+      "Route": "images/de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.x4tlkzce44.png",
+      "AssetFile": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\web\\wwwroot\\images\\de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pzk7DjDv3kqD/w4gKkxVNpqUqb2Nbaq+BMViyTSfDTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 10:55:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x4tlkzce44"
+        },
+        {
+          "Name": "label",
+          "Value": "images/de0c3c51-5d4f-4239-9fd5-ec53b9e873bf.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pzk7DjDv3kqD/w4gKkxVNpqUqb2Nbaq+BMViyTSfDTI="
         }
       ]
     },
