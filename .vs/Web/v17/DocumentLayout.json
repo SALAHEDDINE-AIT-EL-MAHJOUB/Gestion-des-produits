@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\domain\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|solutionrelative:domain\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\domain\\models\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|solutionrelative:domain\\models\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{043F08A2-C59C-4179-B01B-E5A6B3F78CD6}|Domain\\Domain.csproj|solutionrelative:domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\repository\\irepositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|solutionrelative:repository\\irepositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\repository\\irepositories\\iproductlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|solutionrelative:repository\\irepositories\\iproductlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\repository\\repositories\\productlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DE47944-88F1-43C3-9935-D7FC004734FC}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC50221B-8F65-4E2E-A275-86864DC8F6BD}|Service\\Service.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\service\\services\\productlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC50221B-8F65-4E2E-A275-86864DC8F6BD}|Service\\Service.csproj|solutionrelative:service\\services\\productlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC50221B-8F65-4E2E-A275-86864DC8F6BD}|Service\\Service.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC50221B-8F65-4E2E-A275-86864DC8F6BD}|Service\\Service.csproj|solutionrelative:service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\web\\controllers\\productlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|solutionrelative:web\\controllers\\productlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|solutionrelative:web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|c:\\users\\sallaheddine\\desktop\\gestion-des-produits-main\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA718F47-F768-4762-A903-F86EF6057E02}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\UserModel.cs",
+              "RelativeToolTip": "Domain\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:49:38.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductList.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\ProductList.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ProductList.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\ProductList.cs",
+              "RelativeToolTip": "Domain\\Models\\ProductList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:49:35.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Domain\\Models\\Product.cs",
+              "RelativeToolTip": "Domain\\Models\\Product.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:49:31.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\IRepositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IRepositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\IRepositories\\IProductRepository.cs",
+              "RelativeToolTip": "Repository\\IRepositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:49:22.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\IRepositories\\IProductListRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IRepositories\\IProductListRepository.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\IRepositories\\IProductListRepository.cs",
+              "RelativeToolTip": "Repository\\IRepositories\\IProductListRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:49:19.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Service\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Service\\Services\\ProductService.cs",
+              "RelativeToolTip": "Service\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:48:41.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Web\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAswKEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:47:01.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductListService.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Service\\Services\\ProductListService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ProductListService.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Service\\Services\\ProductListService.cs",
+              "RelativeToolTip": "Service\\Services\\ProductListService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:46:51.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:46:19.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductListController.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Controllers\\ProductListController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\ProductListController.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Controllers\\ProductListController.cs",
+              "RelativeToolTip": "Web\\Controllers\\ProductListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T11:43:45.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductListRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\Repositories\\ProductListRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductListRepository.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Repository\\Repositories\\ProductListRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ProductListRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T11:35:02.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Sallaheddine\\Desktop\\Gestion-des-produits-main\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T09:56:55.527Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

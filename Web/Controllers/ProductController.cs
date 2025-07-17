@@ -159,7 +159,11 @@ namespace Web.Controllers
                     Price = product.Price ?? 0, 
                     Stock = product.Stock ?? 0, 
                     DateCreation = product.DateCreation,
+
                     ListProduitId = product.ListProduitId ?? 1,
+
+                   
+
                     Description = product.Description ?? "",
                     PhotoUrl = product.PhotoUrl ?? ""
                 });
