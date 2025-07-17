@@ -1,33 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import './ProductView.css';
 
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  stock: number;
+  PhotoUrl?: string;
+  description?: string;
+  listProduitId: number;
+}
+
+interface ProductList {
+  id: number;
+  name: string;
+}
+
 function ProductView() {
-  const [products, setProducts] = useState([]);
-  const [productLists, setProductLists] = useState([]);
-  const [form, setForm] = useState({
+  const [products, setProducts] = useState<Product[]>([]);
+  const [productLists, setProductLists] = useState<ProductList[]>([]);
+  const [form, setForm] = useState<Omit<Product, "id" | "PhotoUrl"> & { imageUrl?: string }>({
     name: "",
-    price: "",
-    stock: "",
+    price: 0,
+    stock: 0,
     imageUrl: "",
     description: "",
     listProduitId: 1
   });
-  const [imageFile, setImageFile] = useState(null);
+  const [imageFile, setImageFile] = useState<File | null>(null);
   const [showForm, setShowForm] = useState(false);
-  const [editId, setEditId] = useState(null);
+  const [editId, setEditId] = useState<number | null>(null);
 
-  // Ajout pour la recherche et le filtre
   const [search, setSearch] = useState("");
   const [filterListId, setFilterListId] = useState("");
 
-  // Filtrage des produits (définir AVANT la pagination)
   const filteredProducts = products.filter(p => {
     const matchName = p.name?.toLowerCase().includes(search.toLowerCase());
     const matchList = filterListId === "" || String(p.listProduitId) === filterListId;
     return matchName && matchList;
   });
 
-  // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 8;
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
@@ -42,7 +54,7 @@ function ProductView() {
       .then(async res => {
         if (!res.ok) {
           const text = await res.text();
-          alert("Erreur API: " + text); // Affiche le message d’erreur du backend
+          alert("Erreur API: " + text);
           throw new Error(text);
         }
         return res.json();
@@ -55,9 +67,25 @@ function ProductView() {
       .then(setProductLists);
   }, []);
 
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleFileChange = e => setImageFile(e.target.files[0]);
-  const handleEdit = (product) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm(prev => ({
+      ...prev,
+      [name]: name === "price" || name === "stock" || name === "listProduitId"
+        ? Number(value)
+        : value
+    }));
+  };
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      setImageFile(e.target.files[0]);
+    }
+  };
+
+  const handleEdit = (product: Product) => {
     setEditId(product.id);
     setShowForm(true);
     setForm({
@@ -71,20 +99,20 @@ function ProductView() {
     setImageFile(null);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", form.name);
-    formData.append("price", form.price);
-    formData.append("stock", form.stock);
+    formData.append("price", String(form.price));
+    formData.append("stock", String(form.stock));
     if (imageFile) {
       formData.append("image", imageFile);
       formData.append("PhotoUrl", imageFile.name);
     } else {
       formData.append("PhotoUrl", "");
     }
-    formData.append("description", form.description);
-    formData.append("listProduitId", form.listProduitId);
+    formData.append("description", form.description || "");
+    formData.append("listProduitId", String(form.listProduitId));
 
     const url = editId ? `/api/product/${editId}` : "/api/product";
     const method = editId ? "PUT" : "POST";
@@ -100,7 +128,7 @@ function ProductView() {
         }
         return res.json();
       })
-      .then(prod => {
+      .then((prod: Product) => {
         if (editId) {
           setProducts(products.map(p => p.id === editId ? prod : p));
         } else {
@@ -110,8 +138,8 @@ function ProductView() {
         setEditId(null);
         setForm({
           name: "",
-          price: "",
-          stock: "",
+          price: 0,
+          stock: 0,
           imageUrl: "",
           description: "",
           listProduitId: 1
@@ -123,7 +151,7 @@ function ProductView() {
       });
   };
 
-  const handleDelete = id => {
+  const handleDelete = (id: number) => {
     fetch(`/api/product/${id}`, { method: "DELETE" })
       .then(() => setProducts(products.filter(p => p.id !== id)));
   };
@@ -165,8 +193,8 @@ function ProductView() {
             setEditId(null);
             setForm({
               name: "",
-              price: "",
-              stock: "",
+              price: 0,
+              stock: 0,
               imageUrl: "",
               description: "",
               listProduitId: 1
@@ -196,8 +224,8 @@ function ProductView() {
             setEditId(null);
             setForm({
               name: "",
-              price: "",
-              stock: "",
+              price: 0,
+              stock: 0,
               imageUrl: "",
               description: "",
               listProduitId: 1
@@ -230,8 +258,8 @@ function ProductView() {
                   setEditId(null);
                   setForm({
                     name: "",
-                    price: "",
-                    stock: "",
+                    price: 0,
+                    stock: 0,
                     imageUrl: "",
                     description: "",
                     listProduitId: 1
@@ -259,7 +287,7 @@ function ProductView() {
               </div>
               <div className="mb-3">
                 <label className="form-label fw-bold">
-                  <i className="bi bi-currency-dollar"></i> Prix
+                  Prix DH
                 </label>
                 <input
                   type="number"
@@ -338,8 +366,8 @@ function ProductView() {
                       setShowForm(false);
                       setForm({
                         name: "",
-                        price: "",
-                        stock: "",
+                        price: 0,
+                        stock: 0,
                         imageUrl: "",
                         description: "",
                         listProduitId: 1

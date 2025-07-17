@@ -4,7 +4,7 @@ import Home from "./Home";
 import ProductView from "./ProductView";
 import ProductListView from "./ProductListView";
 import Navbar from "./Navbar";
-import logo from './logo.svg';
+
 import './App.css';
 
 function AppContent() {

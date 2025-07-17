@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaHome, FaBoxOpen, FaListUl, FaStore, FaBars, FaTimes } from "react-icons/fa";
+import * as FaIcons from "react-icons/fa";
 
-function Navbar() {
+const Navbar: React.FC = () => {
   const location = useLocation();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   // Ne pas afficher la Navbar sur la page d'accueil
   if (location.pathname === "/") {
@@ -12,13 +12,13 @@ function Navbar() {
   }
 
   const navLinks = [
-    { to: "/", label: "Accueil", icon: <FaHome /> },
-    { to: "/products", label: "Produits", icon: <FaBoxOpen /> },
-    { to: "/lists", label: "Listes", icon: <FaListUl /> },
+    { to: "/", label: "Accueil", icon: FaIcons.FaHome },
+    { to: "/products", label: "Produits", icon: FaIcons.FaBoxOpen },
+    { to: "/lists", label: "Listes", icon: FaIcons.FaListUl },
   ];
 
   // Styles pour le responsive
-  const navStyle = {
+  const navStyle: React.CSSProperties = {
     background: "#007bff",
     padding: "2rem 1rem",
     boxShadow: "2px 0 8px rgba(0,0,0,0.08)",
@@ -26,14 +26,14 @@ function Navbar() {
     flexDirection: "column",
     alignItems: "flex-start",
     minHeight: "100vh",
-    width: "250px",
+    width: "320px", // élargi ici
     position: "fixed",
     left: 0,
     top: 0,
     zIndex: 100,
   };
 
-  const burgerStyle = {
+  const burgerStyle: React.CSSProperties = {
     position: "fixed",
     top: "1rem",
     left: "1rem",
@@ -51,11 +51,11 @@ function Navbar() {
     cursor: "pointer",
   };
 
-  const popupStyle = {
+  const popupStyle: React.CSSProperties = {
     position: "fixed",
     top: 0,
     left: 0,
-    width: "250px",
+    width: "320px", // élargi ici aussi
     height: "100vh",
     background: "#007bff",
     boxShadow: "2px 0 8px rgba(0,0,0,0.08)",
@@ -89,9 +89,9 @@ function Navbar() {
           }}
         >
           <button style={{ ...burgerStyle, position: "static", marginRight: "1rem" }} onClick={() => setOpen(true)}>
-            <FaBars />
+            {FaIcons.FaBars({})}
           </button>
-          <FaStore size={32} color="#fff" style={{ marginRight: "0.5rem" }} />
+          {FaIcons.FaStore({ size: 32, color: "#fff" })}
           <span style={{ fontWeight: "bold", color: "#fff", fontSize: "1.3rem", letterSpacing: "2px" }}>
             Gestion des Produits
           </span>
@@ -103,7 +103,7 @@ function Navbar() {
               style={{ ...burgerStyle, left: "200px", background: "transparent", color: "#fff", boxShadow: "none" }}
               onClick={() => setOpen(false)}
             >
-              <FaTimes />
+              {FaIcons.FaTimes({})}
             </button>
             <ul
               style={{
@@ -121,7 +121,6 @@ function Navbar() {
                   <Link
                     to={link.to}
                     style={{
-                      color: "#fff",
                       textDecoration: "none",
                       fontWeight: "500",
                       padding: "0.75rem 1rem",
@@ -135,7 +134,10 @@ function Navbar() {
                     }}
                     onClick={() => setOpen(false)}
                   >
-                    {link.icon} {link.label}
+                    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      {link.icon({ size: 20 })}
+                      {link.label}
+                    </span>
                   </Link>
                 </li>
               ))}
@@ -153,7 +155,7 @@ function Navbar() {
     <nav style={navStyle}>
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "2rem" }}>
-        <FaStore size={32} color="#fff" />
+        {FaIcons.FaStore({ size: 32, color: "#fff" })}
         <span style={{ fontWeight: "bold", color: "#fff", fontSize: "1.5rem", letterSpacing: "2px" }}>
           Gestion des Produits
         </span>
@@ -184,17 +186,19 @@ function Navbar() {
                 alignItems: "center",
                 gap: "0.5rem",
                 background: location.pathname === link.to ? "#FFD600" : "transparent",
-                color: location.pathname === link.to ? "#333" : "#fff",
                 transition: "background 0.2s, color 0.2s",
               }}
             >
-              {link.icon} {link.label}
+              <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                {link.icon({ size: 20 })}
+                {link.label}
+              </span>
             </Link>
           </li>
         ))}
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;

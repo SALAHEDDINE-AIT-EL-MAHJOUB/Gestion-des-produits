@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import { FaEdit, FaTrash, FaSearch } from "react-icons/fa";
-import "./ProductListView.css"; // Ajout de l'import CSS
+import "./ProductListView.css";
 
-function ProductListView() {
-  const [lists, setLists] = useState([]);
-  const [form, setForm] = useState({ name: "" });
-  const [editId, setEditId] = useState(null);
-  const [editName, setEditName] = useState("");
-  const [search, setSearch] = useState("");
-  const [showForm, setShowForm] = useState(false);
+interface ProductList {
+  id: number;
+  name: string;
+}
+
+const ProductListView: React.FC = () => {
+  const [lists, setLists] = useState<ProductList[]>([]);
+  const [form, setForm] = useState<{ name: string }>({ name: "" });
+  const [editId, setEditId] = useState<number | null>(null);
+  const [editName, setEditName] = useState<string>("");
+  const [search, setSearch] = useState<string>("");
+  const [showForm, setShowForm] = useState<boolean>(false);
 
   useEffect(() => {
     fetch("/api/productlist")
@@ -16,9 +21,10 @@ function ProductListView() {
       .then(setLists);
   }, []);
 
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     fetch("/api/productlist", {
       method: "POST",
@@ -29,19 +35,20 @@ function ProductListView() {
       .then(list => setLists([...lists, list]));
   };
 
-  const handleDelete = id => {
+  const handleDelete = (id: number) => {
     fetch(`/api/productlist/${id}`, { method: "DELETE" })
       .then(() => setLists(lists.filter(l => l.id !== id)));
   };
 
-  const startEdit = (id, name) => {
+  const startEdit = (id: number, name: string) => {
     setEditId(id);
     setEditName(name);
   };
 
-  const handleEditChange = e => setEditName(e.target.value);
+  const handleEditChange = (e: ChangeEvent<HTMLInputElement>) =>
+    setEditName(e.target.value);
 
-  const handleEditSubmit = e => {
+  const handleEditSubmit = (e: FormEvent) => {
     e.preventDefault();
     fetch(`/api/productlist/${editId}`, {
       method: "PUT",
@@ -61,7 +68,7 @@ function ProductListView() {
         setEditId(null);
         setEditName("");
       })
-      .catch(err => alert(err.message));
+      .catch(err => alert((err as Error).message));
   };
 
   const filteredLists = lists.filter(l =>
@@ -87,7 +94,7 @@ function ProductListView() {
 
        {/* Barre de recherche centrée */}
       <div className="product-list-search-bar mb-4 mb-4">
-        <FaSearch style={{ marginRight: 8, color: "#5dade2" }} />
+        {FaSearch({ style: { marginRight: 8, color: "#5dade2" } })}
         <input
           type="text"
           placeholder="Rechercher..."
@@ -165,7 +172,7 @@ function ProductListView() {
                       autoFocus
                     />
                     <button type="submit" className="product-list-btn-edit">
-                      <FaEdit />
+                      {FaEdit({})}
                       Valider
                     </button>
                     <button type="button" onClick={() => setEditId(null)} className="product-list-btn-cancel">
@@ -184,14 +191,14 @@ function ProductListView() {
                       className="product-list-btn-edit"
                       style={{ marginRight: "8px" }}
                     >
-                      <FaEdit />
+                      {FaEdit({})}
                       Modifier
                     </button>
                     <button
                       onClick={() => handleDelete(l.id)}
                       className="product-list-btn-delete"
                     >
-                      <FaTrash />
+                      {FaTrash({})}
                       Supprimer
                     </button>
                   </>

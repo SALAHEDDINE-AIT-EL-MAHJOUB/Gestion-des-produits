@@ -4,7 +4,6 @@ C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\pac
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\package.json
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\views\package-lock.json
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\views\package.json
-C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\views\public\manifest.json
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\Web.staticwebassets.runtime.json
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\Web.exe
@@ -454,3 +453,4 @@ C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net8.0\ref
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net8.0\Web.pdb
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\Sallaheddine\Desktop\Gestion-des-produits-main\web\bin\Debug\net8.0\views\tsconfig.json
