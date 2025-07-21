@@ -1,5 +1,9 @@
 import React, { useEffect, useState, ChangeEvent, FormEvent } from "react";
 import './ProductView.css';
+import { Bar, Doughnut } from "react-chartjs-2";
+import { Chart, BarElement, CategoryScale, LinearScale, ArcElement } from "chart.js";
+import { FaBoxOpen, FaExclamationTriangle } from "react-icons/fa";
+Chart.register(BarElement, CategoryScale, LinearScale, ArcElement);
 
 interface Product {
   id: number;
@@ -158,10 +162,55 @@ function ProductView() {
 
   const defaultImage = "/images/no-image.png";
 
+  const totalProducts = products.length;
+const outOfStock = products.filter(p => p.stock === 0).length;
+
+const chartData = {
+  labels: ["Total Produits", "Rupture de stock"],
+  datasets: [
+    {
+      label: "Nombre",
+      data: [totalProducts, outOfStock],
+      backgroundColor: ["#2298F1", "#D65B4A"],
+    },
+  ],
+};
+
+const chartOptions = {
+  responsive: true,
+  plugins: { legend: { display: false } },
+  scales: { y: { beginAtZero: true, precision: 0 } },
+};
+
+  if (!products) return <div>Chargement...</div>;
+
   return (
     <div style={{ paddingTop: window.innerWidth < 768 ? "64px" : "0" }}>
-      <div className="mt-4 mb-4">
-        <h2 className="text-center">Produits</h2>
+      {/* HEADER DASHBOARD STYLE */}
+      <div className="d-flex flex-wrap gap-2 mb-4 align-items-center justify-content-center">
+        <div className="row justify-content-center gap-4">
+          <div className="col-12 col-md-6 col-lg-3 mb-6"style={{ marginRight: 200 }}>
+            <div className="card text-white text-center" style={{ minHeight: 120, position: "relative", background: "#66B92E" }} >
+              <div className="title">Total produits</div>
+              <FaBoxOpen style={{ fontSize: 28, opacity: 0.3, position: "absolute", right: 13, top: 13 }} />
+              <div className="value" style={{ fontSize: 32, fontWeight: 700 }}>
+                {products.length === 0 ? <span>0</span> : totalProducts}
+              </div>
+              <div className="stat">Tous les produits</div>
+            </div>
+          </div>
+          
+          <div className="col-12 col-md-6 col-lg-3 mb-3">
+            <div className="card text-white text-center" style={{ minHeight: 120, position: "relative", background: "#D65B4A" }}>
+              <div className="title">Rupture de stock</div>
+              <FaExclamationTriangle style={{ fontSize: 28, opacity: 0.3, position: "absolute", right: 13, top: 13 }} />
+              <div className="value" style={{ fontSize: 32, fontWeight: 700 }}>
+                {products.length === 0 ? <span>0</span> : outOfStock}
+              </div>
+              <div className="stat">Stock = 0</div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Barre de recherche et filtre */}
       <div className="d-flex flex-wrap gap-2 mb-4 align-items-center justify-content-center">
@@ -463,6 +512,7 @@ function ProductView() {
           </ul>
         </nav>
       )}
+   
     </div>
   );
 }

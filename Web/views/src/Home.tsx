@@ -1,13 +1,40 @@
-// filepath: c:\Users\Sallaheddine\Desktop\Web\Web\views\src\Home.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart, BarElement, CategoryScale, LinearScale } from "chart.js";
 import * as FaIcons from "react-icons/fa";
 Chart.register(BarElement, CategoryScale, LinearScale);
 
+// Ajoute ces interfaces selon ta structure réelle
+interface Product {
+  id: number;
+  name: string;
+  // ...autres champs si besoin
+}
+interface ProductList {
+  id: number;
+  name: string;
+  // ...autres champs si besoin
+}
+
 const Home: React.FC = () => {
-  const productCount = 12;
-  const listCount = 5;
+  const [products, setProducts] = useState<Product[]>([]);
+  const [lists, setLists] = useState<ProductList[]>([]);
+
+  // Récupère les produits et listes au chargement
+  useEffect(() => {
+    fetch("/api/product")
+      .then(res => res.ok ? res.json() : [])
+      .then(data => setProducts(Array.isArray(data) ? data : []))
+      .catch(() => setProducts([]));
+
+    fetch("/api/productlist") // <-- corrige ici
+      .then(res => res.ok ? res.json() : [])
+      .then(data => setLists(Array.isArray(data) ? data : []))
+      .catch(() => setLists([]));
+  }, []);
+
+  const productCount = products.length;
+  const listCount = lists.length;
 
   // Responsive: détecte si mobile
   const isMobile = window.innerWidth < 768;
@@ -32,6 +59,8 @@ const Home: React.FC = () => {
       y: { beginAtZero: true, precision: 0 },
     },
   };
+
+  if (!products || !lists) return <div>Chargement...</div>;
 
   return (
     <div

@@ -32,7 +32,11 @@ const ProductListView: React.FC = () => {
       body: JSON.stringify(form)
     })
       .then(res => res.json())
-      .then(list => setLists([...lists, list]));
+      .then(list => {
+        setLists([...lists, list]);
+        setShowForm(false); // <-- ferme le formulaire après ajout
+        setForm({ name: "" }); // (optionnel) réinitialise le champ
+      });
   };
 
   const handleDelete = (id: number) => {
