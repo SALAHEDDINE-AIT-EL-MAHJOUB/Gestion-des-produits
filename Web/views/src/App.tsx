@@ -14,7 +14,7 @@ function AppContent() {
 
   return (
     <div style={{ marginLeft: !isHome && !isMobile ? "250px" : 0 }}>
-      {!isHome && <Navbar />}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductView />} />

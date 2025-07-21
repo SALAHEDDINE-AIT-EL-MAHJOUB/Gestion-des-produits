@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import * as FaIcons from "react-icons/fa";
+import { FiHome, FiMessageSquare, FiUsers, FiFolder, FiArchive, FiHelpCircle, FiSettings } from "react-icons/fi";
+import { FaBars, FaStore, FaTimes } from "react-icons/fa"; // Ajouté
+
+
+const navLinks = [
+  { to: "/", label: "Home", icon: <FiHome /> },
+ 
+ 
+  { to: "/lists", label: "list des produits ", icon: <FiFolder /> },
+  { to: "/products", label: "produit ", icon: <FiArchive /> },
+ 
+];
 
 const Navbar: React.FC = () => {
   const location = useLocation();
   const [open, setOpen] = useState<boolean>(false);
 
-  // Ne pas afficher la Navbar sur la page d'accueil
-  if (location.pathname === "/") {
-    return null;
-  }
-
-  const navLinks = [
-    { to: "/", label: "Accueil", icon: FaIcons.FaHome },
-    { to: "/products", label: "Produits", icon: FaIcons.FaBoxOpen },
-    { to: "/lists", label: "Listes", icon: FaIcons.FaListUl },
-  ];
+  
 
   // Styles pour le responsive
   const navStyle: React.CSSProperties = {
@@ -89,9 +91,9 @@ const Navbar: React.FC = () => {
           }}
         >
           <button style={{ ...burgerStyle, position: "static", marginRight: "1rem" }} onClick={() => setOpen(true)}>
-            {FaIcons.FaBars({})}
+            <FaBars />
           </button>
-          {FaIcons.FaStore({ size: 32, color: "#fff" })}
+          <FaStore size={32} color="#fff" />
           <span style={{ fontWeight: "bold", color: "#fff", fontSize: "1.3rem", letterSpacing: "2px" }}>
             Gestion des Produits
           </span>
@@ -103,7 +105,7 @@ const Navbar: React.FC = () => {
               style={{ ...burgerStyle, left: "200px", background: "transparent", color: "#fff", boxShadow: "none" }}
               onClick={() => setOpen(false)}
             >
-              {FaIcons.FaTimes({})}
+              <FaTimes />
             </button>
             <ul
               style={{
@@ -135,7 +137,7 @@ const Navbar: React.FC = () => {
                     onClick={() => setOpen(false)}
                   >
                     <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      {link.icon({ size: 20 })}
+                      {React.cloneElement(link.icon, { size: 20 })}
                       {link.label}
                     </span>
                   </Link>
@@ -155,7 +157,7 @@ const Navbar: React.FC = () => {
     <nav style={navStyle}>
       {/* Logo */}
       <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "2rem" }}>
-        {FaIcons.FaStore({ size: 32, color: "#fff" })}
+        <FaStore size={32} color="#fff" />
         <span style={{ fontWeight: "bold", color: "#fff", fontSize: "1.5rem", letterSpacing: "2px" }}>
           Gestion des Produits
         </span>
@@ -190,7 +192,7 @@ const Navbar: React.FC = () => {
               }}
             >
               <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                {link.icon({ size: 20 })}
+                {React.cloneElement(link.icon, { size: 20 })}
                 {link.label}
               </span>
             </Link>

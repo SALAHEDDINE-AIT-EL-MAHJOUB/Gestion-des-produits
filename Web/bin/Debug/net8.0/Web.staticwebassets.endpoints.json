@@ -1479,6 +1479,88 @@
       ]
     },
     {
+      "Route": "images/c6537ac9-2957-4303-ada6-c85f348d09af.png",
+      "AssetFile": "images/c6537ac9-2957-4303-ada6-c85f348d09af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FyPSRLWTYNX98rpXeiowuiYC0EXw0UMhJUWDw/yyWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 16:25:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FyPSRLWTYNX98rpXeiowuiYC0EXw0UMhJUWDw/yyWwk="
+        }
+      ]
+    },
+    {
+      "Route": "images/c6537ac9-2957-4303-ada6-c85f348d09af.tzyfynee8t.png",
+      "AssetFile": "images/c6537ac9-2957-4303-ada6-c85f348d09af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12627"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FyPSRLWTYNX98rpXeiowuiYC0EXw0UMhJUWDw/yyWwk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 16:25:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tzyfynee8t"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FyPSRLWTYNX98rpXeiowuiYC0EXw0UMhJUWDw/yyWwk="
+        },
+        {
+          "Name": "label",
+          "Value": "images/c6537ac9-2957-4303-ada6-c85f348d09af.png"
+        }
+      ]
+    },
+    {
       "Route": "images/ddd50191-f680-473d-b9da-16b3c9e18c3b.5bkulwibap.png",
       "AssetFile": "images/ddd50191-f680-473d-b9da-16b3c9e18c3b.png",
       "Selectors": [],
