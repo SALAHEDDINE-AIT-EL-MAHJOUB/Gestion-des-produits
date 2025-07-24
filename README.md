@@ -30,10 +30,4 @@ Elle permet d’ajouter, modifier, supprimer et consulter des produits dans une 
 ### 3. Liste des produits
 ![Liste produits](Web/wwwroot/images/banner3.png)
 
-## Structure du projet
 
-- **Domain** : Entités métier
-- **Repository** : Accès aux données (Entity Framework)
-- **Presentation** : Interface utilisateur (Web ou Desktop)
-- **Repository** : Gère l’accès aux données (CRUD)
-- **Service**: Contient la logique métier
